@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style_contacto.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <a href="/">
+                <img src="img/firma.png">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/sobremi">Sobre mi</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn"><button>Compra una obra</button></a>
+
+    </header>
+
+    <div class="form-content">
+
+        <form action="https://formsubmit.co/alvaromartin.art@gmail.com" method="POST">
+
+            <p class="title">Formulario de contacto</p>
+
+            <br>
+            <br>
+
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Correo electronico</label>
+            <input type="email" name="email" id="email">
+
+            <label for="comments">Cuentame lo que quieras</label>
+            <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+
+            <input class="btn-formulario" type="submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5000/enviado">
+            <input type="hidden" name="_captcha" value="false">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
